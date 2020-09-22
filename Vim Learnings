@@ -2,7 +2,7 @@ Vim Learnings
 
 gg --to top of the document
 
-shift+g -- to the last of the document
+shift+g , G -- to the last of the document
 
 0 -- take you to the first character on the same line
 
@@ -11,10 +11,15 @@ shift+g -- to the last of the document
 45G -- move to line number 45
 
 
+10l -- move 10 characters forward
+
+
 x -- to delete the character -- in normal mode
 
 
 u -undo the channges -- in normal mode
+5u -- does undo fives times
+crtl + r --redo 
 
 
 xx -- will delete 2 characters
@@ -29,6 +34,24 @@ dd -- delete the line
 
 w -- cursor goes to beninng of first character of each word.
 5w -- moves 5 word forward
+b -- take you to prceding word -- takes you back.
 
 
 e -- will go to last character of each word.
+
+
+dd --delete the line and p will put that line at place you want.
+
+
+r -- to replace the characters.
+
+
+ce -- change the line or change the word on the line.
+c$ -- change the entire line-- removes the entire line and then you can type in here.
+
+f command -- means forward to ( character) --ft means forward to character "t"
+F command -- move in reverse
+
+
+i --- insert mode
+shift + i --- takes to start of line in insert mode
