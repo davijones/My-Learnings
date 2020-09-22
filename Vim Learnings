@@ -55,3 +55,43 @@ F command -- move in reverse
 
 i --- insert mode
 shift + i --- takes to start of line in insert mode
+
+A -- takes to the end of the line and place us in insert mode
+a --- takes into insert mode character after the cursor
+
+
+S --  deletes entire line and put into insert mode.
+s --delete the character at cursor
+
+
+
+cw -- change the word on the line and put in insert mode
+
+
+
+d$---- delete from the cursor to the end of the line
+
+
+
+y--yank ( copy)
+yw -- copy the word
+p -- put the word
+
+
+yy -- yanks the entire line
+
+
+/ -- searches forward in the doc 
+? --searches backward in the doc
+ctrl+o --takes to the last found instance of the search
+ctrl +i --- takes you to the forward instanee
+
+
+
+:%s/oldstring/newstring/g ---search and replace in the doc.
+
+
+Resources: 
+
+https://www.youtube.com/watch?v=tExTz7GnpdQ
+
