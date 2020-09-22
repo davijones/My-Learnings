@@ -1,0 +1,34 @@
+Vim Learnings
+
+gg --to top of the document
+
+shift+g -- to the last of the document
+
+0 -- take you to the first character on the same line
+
+2G -- move to line number 2 
+
+45G -- move to line number 45
+
+
+x -- to delete the character -- in normal mode
+
+
+u -undo the channges -- in normal mode
+
+
+xx -- will delete 2 characters
+xxx will delete 3 characters
+
+
+dw -- will delete the word
+
+
+dd -- delete the line
+
+
+w -- cursor goes to beninng of first character of each word.
+5w -- moves 5 word forward
+
+
+e -- will go to last character of each word.
