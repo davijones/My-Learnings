@@ -137,6 +137,7 @@ Install go
 --------------
 
 https://github.com/canha/golang-tools-install-script
+sudo apt install golang
 
 magento
 --------

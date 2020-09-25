@@ -1,0 +1,97 @@
+Vim Learnings
+
+gg --to top of the document
+
+shift+g , G -- to the last of the document
+
+0 -- take you to the first character on the same line
+
+2G -- move to line number 2 
+
+45G -- move to line number 45
+
+
+10l -- move 10 characters forward
+
+
+x -- to delete the character -- in normal mode
+
+
+u -undo the channges -- in normal mode
+5u -- does undo fives times
+crtl + r --redo 
+
+
+xx -- will delete 2 characters
+xxx will delete 3 characters
+
+
+dw -- will delete the word
+
+
+dd -- delete the line
+
+
+w -- cursor goes to beninng of first character of each word.
+5w -- moves 5 word forward
+b -- take you to prceding word -- takes you back.
+
+
+e -- will go to last character of each word.
+
+
+dd --delete the line and p will put that line at place you want.
+
+
+r -- to replace the characters.
+
+
+ce -- change the line or change the word on the line.
+c$ -- change the entire line-- removes the entire line and then you can type in here.
+
+f command -- means forward to ( character) --ft means forward to character "t"
+F command -- move in reverse
+
+
+i --- insert mode
+shift + i --- takes to start of line in insert mode
+
+A -- takes to the end of the line and place us in insert mode
+a --- takes into insert mode character after the cursor
+
+
+S --  deletes entire line and put into insert mode.
+s --delete the character at cursor
+
+
+
+cw -- change the word on the line and put in insert mode
+
+
+
+d$---- delete from the cursor to the end of the line
+
+
+
+y--yank ( copy)
+yw -- copy the word
+p -- put the word
+
+
+yy -- yanks the entire line
+
+
+/ -- searches forward in the doc 
+? --searches backward in the doc
+ctrl+o --takes to the last found instance of the search
+ctrl +i --- takes you to the forward instanee
+
+
+
+:%s/oldstring/newstring/g ---search and replace in the doc.
+
+
+Resources: 
+
+https://www.youtube.com/watch?v=tExTz7GnpdQ
+
