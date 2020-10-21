@@ -1,0 +1,15 @@
+
+Web-enum
+
+
+
+1. Put the hostname in /etc/hosts
+2. Check for sub-domains.
+2. Check the curl for headers
+3. Run cewl to crate the custom wordlists
+4. Run gobuster and ffuf against that wordlist
+5. Run the url in browser and check the source code in bursuite.
+5. Check the Auto recon findings.
+
+
+wfuzz -c  -w /usr/share/seclists/Discovery/DNS/namelist.txt -u "http://10.10.10.193" -H "Host: FUZZ.office.csl
